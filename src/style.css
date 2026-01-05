@@ -23,6 +23,7 @@ div#search-box {
 
 div#search-box > svg {
   height: 35px;
+  fill: #907a99;
 }
 
 div#search-box > input {
@@ -45,7 +46,7 @@ div#weather-display {
   font-weight: 700;
 }
 
-div#weather-display > div:nth-child(2) {
+div#weather-display > div:nth-child(2) > div {
    /* width: max(500px, 30vw); */
    display: grid;
    grid-template-columns: 230px 400px;
@@ -53,11 +54,20 @@ div#weather-display > div:nth-child(2) {
    color: white;
 }
 
-div#weather-display > div:nth-child(2) >div:nth-child(even) {
+div#weather-display > div:nth-child(2) > div {
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+div#weather-display > div:nth-child(2) > div:nth-child(odd) {
+  background-color: rgba(173, 158, 173, 0.5);
+}
+
+div#weather-display > div:nth-child(2) > div > div:nth-child(2) {
   font-size: 1.5rem;
 }
 
-div#weather-display > div:nth-child(2) >div:nth-child(10) {
+div#weather-display > div:nth-child(2) > div:nth-child(5) > div:nth-child(2) {
   font-size: 2.5rem;
 }
 
