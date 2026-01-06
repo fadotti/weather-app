@@ -89,10 +89,18 @@ div#weather-display > div:nth-child(1) > button:hover {
   cursor: pointer;
 }
 
-div#weather-display > div:nth-child(1) > button > span:nth-child(3) {
+div#weather-display > div:nth-child(1) > button.fahrenheit > span:nth-child(3) {
   color: #907a99;
 }
 
-div#weather-display > div:nth-child(1) > button > span:nth-child(1) {
+div#weather-display > div:nth-child(1) > button.fahrenheit > span:nth-child(1) {
   font-size: 1.4rem;
+}
+
+div#weather-display > div:nth-child(1) > button.celsius > span:nth-child(3) {
+  font-size: 1.4rem;
+}
+
+div#weather-display > div:nth-child(1) > button.celsius > span:nth-child(1) {
+  color: #907a99;
 }
